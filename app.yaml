@@ -1,0 +1,33 @@
+application: gdg-x-new-york
+version: 1
+# runtime: python
+runtime: python27
+threadsafe: true
+api_version: 1
+
+# default_expiration: '3650d'
+
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+# - url: /
+#   static_dir: static
+
+- url: /css
+  static_dir: css
+
+- url: /lib
+  static_dir: lib
+
+- url: /js
+  static_dir: js
+
+- url: /views
+  static_dir: views
+
+- url: /images
+  static_dir: images
+
